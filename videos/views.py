@@ -8,5 +8,8 @@ from django.http import JsonResponse
 
 def SearchView(request):
     # model = Video_Entry
-    q_result = Video_Entry.objects.all().values()
-    return JsonResponse({"Video_Entry": list(q_result)}, safe=False)
+    params = request.GET.get('q')
+    q_result = Video_Entry.objects.filter(
+        Q(title__icontains=params) | Q(description__icontains=params) | Q(tags__icontains=params)
+    ).values()
+    return JsonResponse(list(q_result), safe=False)
