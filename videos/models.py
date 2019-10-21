@@ -61,7 +61,22 @@ class Time_Period(models.Model):
 
 
 class Video_Entry(models.Model):
+    YOUTUBE = "youtube"
+    VIMEO = "vimeo"
+    NATIONAL_ARCHIVES = "national archives"
+    PLAYER_CHOICES = [
+        (YOUTUBE, 'youtube'),
+        (VIMEO, 'vimeo'),
+        (NATIONAL_ARCHIVES, 'national archives')
+    ]
+
     vid_url = models.URLField('Web Address')
+    resId = models.CharField(max_length=255, null=True)
+    vid_player = models.CharField(
+        max_length=40,
+        choices=PLAYER_CHOICES,
+        default=YOUTUBE,
+    )
     description = models.TextField()
     tags = models.CharField(max_length=225)
     era = models.ForeignKey(Time_Period, on_delete=models.CASCADE, related_name="video_entry")
