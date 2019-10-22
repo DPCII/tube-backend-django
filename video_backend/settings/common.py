@@ -16,15 +16,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@$*73ns3og@uwijd*a)ko#zsebdtg*ub3vzs^11z4q@o%rw_rm'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -77,20 +68,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'video_backend.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'videos_db',
-        'USER': 'dpcii',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-    }
-}
 
 
 # Password validation
