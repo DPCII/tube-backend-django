@@ -9,5 +9,3 @@ admin.site.register(Video_Entry)
 admin.site.register(Natural_Science)
 admin.site.register(Formal_Science)
 admin.site.register(Natural_Science_Video)
-
-
