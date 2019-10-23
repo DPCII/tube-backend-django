@@ -15,8 +15,7 @@ SECRET_KEY = get_env_value('SECRET_KEY')
 
 DEBUG = False
 
-CORS_ORIGIN_ALLOW_ALL = True
-# ALLOWED_HOSTS = [get_env_value('DB_HOST')]
+ALLOWED_HOSTS = ['172.31.0.0/16', '*']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
