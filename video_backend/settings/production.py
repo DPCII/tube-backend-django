@@ -15,7 +15,7 @@ SECRET_KEY = get_env_value('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['172.31.0.0/16', '*']
+ALLOWED_HOSTS = ['172.31.0.0/16', '172.31.2.109', '172.31.1.109']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
