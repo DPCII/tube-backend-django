@@ -15,7 +15,7 @@ SECRET_KEY = get_env_value('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://www.dpcii.com/tube-api-test/']
+ALLOWED_HOSTS = ['http://*.dpcii.*']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
