@@ -42,10 +42,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = [
-    "http://www.dpcii.com/tube-api-test/",
-]
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = [
+#     "http://www.dpcii.com/tube-api-test/",
+# ]
 
 ROOT_URLCONF = 'video_backend.urls'
 
