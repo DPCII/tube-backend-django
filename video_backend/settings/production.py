@@ -2,6 +2,9 @@ from video_backend.settings.common import *
 
 from django.core.exceptions import ImproperlyConfigured
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 def get_env_value(env_variable):
     try:
@@ -15,7 +18,7 @@ SECRET_KEY = get_env_value('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://*.dpcii.*']
+ALLOWED_HOSTS = ['ec2-18-222-120-15.us-east-2.compute.amazonaws.com']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
