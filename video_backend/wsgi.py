@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-## ENV
+# ENV
 pythonenv = os.environ.get('PYTHON_ENV')
 
 if(pythonenv != 'development'):
@@ -22,6 +22,5 @@ if(pythonenv != 'development'):
 else:
     ##
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'video_backend.settings.development')
-    
 
 application = get_wsgi_application()
