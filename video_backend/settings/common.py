@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'videos',
     'django_extensions',
     'corsheaders',
+    'django_heroku',
 ]
 
 MIDDLEWARE = [
