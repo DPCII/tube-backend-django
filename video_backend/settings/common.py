@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'django_extensions',
     'corsheaders',
     'django_heroku',
-    'uwsgi',
 ]
 
 MIDDLEWARE = [
