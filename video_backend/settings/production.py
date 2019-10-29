@@ -18,7 +18,8 @@ SECRET_KEY = get_env_value('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['ec2-18-222-120-15.us-east-2.compute.amazonaws.com']
+# ALLOWED_HOSTS = ['ec2-18-222-120-15.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['*']
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

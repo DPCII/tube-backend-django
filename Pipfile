@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 django-extensions = "*"
 django-cors-headers = "*"
 requests = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.7"
